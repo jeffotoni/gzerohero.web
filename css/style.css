@@ -25,6 +25,14 @@ body {
 	color: #FFF;
 }
 
+.btn-get-hero {
+	width: 120px;
+}
+
+.btn-get-hero .loader {
+	display: none;
+}
+
 .get-hero-hint {
 	font-size: 14px;
 	color: #787878;
@@ -36,8 +44,18 @@ body {
 	text-decoration: none;
 }
 
+#hero-img {
+	width: 200px;
+	height: 200px;
+}
+
+.progress-bar {
+    background-color: #afcfff;
+    color: #242424;
+}
+
 pre {
-	max-height: 400px;
+	max-height: 600px;
 	overflow-y: auto;
 }
 
