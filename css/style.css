@@ -26,6 +26,10 @@ body {
 	color: #FFF;
 }
 
+.form-control {
+	box-shadow: none !important;
+}
+
 .btn-get-hero {
 	width: 120px;
 }
