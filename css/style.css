@@ -1,5 +1,6 @@
 
 body {
+	background-color: #fefefe;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 }
@@ -10,7 +11,7 @@ body {
 }
 
 .header-hero {
-	background-color: #007d9c;
+	background-color: #3dadc9;
 	color: #F6F6F6;
 }
 
