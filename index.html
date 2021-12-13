@@ -1,0 +1,93 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Zero Hero</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Prism --> 
+    <link href="css/prism.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="px-4 pb-4 text-center header-hero">
+      <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <img class="gopher-music" src="images/gopher-music.png" alt="" />
+            <span class="fs-4">ZeroHero API</span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Documentation</a></li>
+            <li class="nav-item"><a href="#" class="nav-link fw-bold">TRY NOW</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Characters IDS</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <img class="d-block mx-auto mb-4" src="images/gopher-gotham.png" alt="" />
+      <h1 class="display-5 fw-bold">Try ZeroHero API</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Get all SuperHeroes and Villians data from all universes under a single API.</p>
+      </div>
+    </div>
+
+    <main>
+
+      <div class="container mt-5">
+
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon3">https://zerohero.s3apis.com/</span>
+          <input type="text" class="form-control" id="search-hero" value="api/batman" />
+          <button class="btn btn-primary btn-get-hero" type="button" id="button-addon2">Request</button>
+        </div>
+
+        <p class="get-hero-hint mb-3">Need a hint? Try <a href="#">api/ironman</a> or <a href="#">644</a></p>
+
+<pre class="get-hero-json-container"><code class="language-json" id="get-hero-json"></code></pre>
+
+      </div>
+
+    </main>
+
+    <div class="footer-hero">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+          <p class="col-md-4 mb-0 text-muted">2021 &copy; jeffotoni. All right reserved.</p>
+
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="gopher-footer" src="images/gopher-helmet.png" alt="" />
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Changelog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Credits</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact us</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  </html>
