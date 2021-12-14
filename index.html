@@ -1,160 +1,167 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="generator" content="">
-  <title>ZeroHero API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>ZeroHero API</title>
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Prism --> 
-  <link href="css/prism.css" rel="stylesheet" />
+    <!-- Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  
-  <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <div class="px-4 pb-4 text-center header-hero">
-    <div class="container-fluid">
-      <header class="d-flex flex-wrap justify-content-center py-3">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-          <img class="gopher-music" src="images/gopher-music.png" alt="" />
-          <span class="fs-4">ZeroHero API</span>
-        </a>
+    <div class="px-4 pb-4 text-center header-hero">
+        <div class="container-fluid">
+            <header class="d-flex flex-wrap justify-content-center py-3">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <img class="gopher-music" src="images/gopher-music.png" alt="" />
+                    <span class="fs-4">ZeroHero API</span>
+                </a>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Documentation</a></li>
-          <li class="nav-item"><a href="#" class="nav-link fw-bold">TRY NOW</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Characters IDS</a></li>
-        </ul>
-      </header>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Documentation</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold">TRY NOW</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Characters IDS</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <img class="d-block mx-auto mb-4" src="images/gopher-gotham.png" alt="" />
+        <h1 class="display-5 fw-bold">Try ZeroHero API</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Get all SuperHeroes and Villians data from all universes under a single API.</p>
+            <p class="lead mb-4">
+                <a href="https://superheroapi.com/index.html" target="_blank">We use as reference the <strong>Superhero api.</strong></a>
+            </p>
+        </div>
     </div>
 
-    <img class="d-block mx-auto mb-4" src="images/gopher-gotham.png" alt="" />
-    <h1 class="display-5 fw-bold">Try ZeroHero API</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Get all SuperHeroes and Villians data from all universes under a single API.</p>
-    </div>
-  </div>
+    <main>
 
-  <main>
+        <div class="container mt-5">
 
-    <div class="container mt-5">
-
-      <div class="input-group">
-        <span class="input-group-text" id="basic-addon3">https://zerohero.s3apis.com/</span>
-        <input type="text" class="form-control" id="search-hero" value="api/hulk" />
-        <button class="btn btn-primary btn-get-hero" type="button" id="button-addon2">
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">https://zerohero.s3apis.com/</span>
+                <input type="text" class="form-control" id="search-hero" value="api/hulk" />
+                <button class="btn btn-primary btn-get-hero" type="button" id="button-addon2">
           <div class="loader">
             <i class="fa fa-spin fa-spinner"></i>
           </div>
           <div class="text">Request</div>
         </button>
-      </div>
-
-      <p class="get-hero-hint mb-3">Need a hint? Try <a href="#">api/ironman</a> or <a href="#">644</a></p>
-
-      <div class="row">
-
-        <div class="col-4">
-          
-          <div class="row">
-
-            <div class="col-md-6 col-12">
-              <img id="hero-img" src="" alt="" />
             </div>
 
-            <div class="col-md-6 col-12">
-              <span id="hero-name">Search for a hero above. Their stats will be shown here.</span>
-              <p id="hero-description"></p>
+            <p class="get-hero-hint mb-3">Need a hint? Try <a href="#">api/ironman</a> or <a href="#">644</a></p>
+
+            <div class="row">
+
+                <div class="col-4">
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-12">
+                            <img id="hero-img" src="" alt="" />
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <span id="hero-name">Search for a hero above. Their stats will be shown here.</span>
+                            <p id="hero-description"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-3">
+                        <p class="fw-500 mb-1">Power stats</p>
+
+                        <div class="my-1">Intelligence</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="pb-intelligence" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="my-1">Strength</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="pb-strength" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="my-1">Speed</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="pb-speed" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="my-1">Durability</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="pb-durability" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="my-1">Power</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="pb-power" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="my-1">Combat</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="pb-combat" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8">
+
+                    <pre class="get-hero-json-container"><code class="language-json" id="get-hero-json"></code></pre>
+
+                </div>
+
             </div>
 
-          </div>
+    </main>
 
-          <div class="mt-3">
-            <p class="fw-500 mb-1">Power stats</p>
+    <div class="footer-hero">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <p class="col-md-4 mb-0 text-muted">2021 &copy; <a href="https://jeffotoni.com">jeffotoni</a>. All right reserved.</p>
 
-            <div class="my-1">Intelligence</div>
-            <div class="progress mb-3">
-              <div class="progress-bar" id="pb-intelligence" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <img class="gopher-footer" src="images/gopher-helmet.png" alt="" />
+                </a>
 
-            <div class="my-1">Strength</div>
-            <div class="progress mb-3">
-              <div class="progress-bar" id="pb-strength" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <div class="my-1">Speed</div>
-            <div class="progress mb-3">
-              <div class="progress-bar" id="pb-speed" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <div class="my-1">Durability</div>
-            <div class="progress mb-3">
-              <div class="progress-bar" id="pb-durability" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <div class="my-1">Power</div>
-            <div class="progress mb-3">
-              <div class="progress-bar" id="pb-power" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <div class="my-1">Combat</div>
-            <div class="progress mb-3">
-              <div class="progress-bar" id="pb-combat" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="https://github.com/jeffotoni/gzerohero.web" class="nav-link px-2 text-muted">Source</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Changelog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Credits</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact us</a></li> -->
+                </ul>
+            </footer>
         </div>
-
-        <div class="col-8">
-
-          <pre class="get-hero-json-container"><code class="language-json" id="get-hero-json"></code></pre>
-
-        </div>
-
     </div>
 
-  </main>
-
-  <div class="footer-hero">
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
-        <p class="col-md-4 mb-0 text-muted">2021 &copy; jeffotoni. All right reserved.</p>
-
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img class="gopher-footer" src="images/gopher-helmet.png" alt="" />
-        </a>
-
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Policy</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Changelog</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Credits</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact us</a></li>
-        </ul>
-      </footer>
-    </div>
-  </div>
-
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/prism.js"></script>
-  <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
